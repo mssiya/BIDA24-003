@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Cart - Perfume Haven</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="perfume.css" />
+</head>
+<body style="background-color: #ffc0cb;">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="home.html">Perfume Haven</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link active" href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Cart Section -->
+  <div class="container py-5">
+    <h2 class="mb-4 text-center fw-bold">Your Shopping Cart</h2>
+
+    <div class="row">
+      <div class="col-md-8">
+        <!-- Cart Item -->
+        <div class="card mb-4">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-3">
+              <img src="https://i.pinimg.com/736x/ae/f7/7a/aef77ab923fd8c3e8bd1aee0a707cdc9.jpg" class="img-fluid rounded-start" alt="Scandal Intense">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title">SCANDAL INTENSE</h5>
+                <p class="card-text"><small class="text-muted">EAU DE PARFUM INTENSE</small></p>
+                <p class="card-text fw-bold">$99.99</p>
+              </div>
+            </div>
+            <div class="col-md-3 text-center">
+              <input type="number" class="form-control text-center" value="1" min="1" style="width: 80px;">
+              <button class="btn btn-link text-danger mt-2">Remove</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more cart items similarly -->
+
+      </div>
+
+      <div class="col-md-4">
+        <div class="card p-4 shadow-sm">
+          <h5 class="mb-3">Order Summary</h5>
+          <div class="d-flex justify-content-between mb-2">
+            <span>Subtotal</span>
+            <span>$99.99</span>
+          </div>
+          <div class="d-flex justify-content-between mb-2">
+            <span>Shipping</span>
+            <span>$5.00</span>
+          </div>
+          <hr>
+          <div class="d-flex justify-content-between fw-bold">
+            <span>Total</span>
+            <span>$104.99</span>
+          </div>
+          <a href="checkout.html" class="btn btn-dark w-100 mt-4">Proceed to Checkout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-4">
+    <p class="mb-0">&copy; 2025 Perfume Haven. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
